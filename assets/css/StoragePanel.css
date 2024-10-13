@@ -1,0 +1,33 @@
+/* src/components/StoragePanel.css */
+
+.storage-panel {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  height: 100vh;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.storage-item {
+  margin-bottom: 20px;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+.upgrade-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upgrade-btn:hover {
+  background-color: #e5533f;
+}

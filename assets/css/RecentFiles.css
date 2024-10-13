@@ -1,0 +1,43 @@
+.recent-files-container {
+  border-radius: 8px;
+  height: 60px;
+  margin-top: 20px;
+  /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);*/
+}
+
+.recent-files-table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.recent-files-table th,
+.recent-files-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.recent-files-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.recent-files-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.view-all-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3;
+}

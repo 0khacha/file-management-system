@@ -1,62 +1,55 @@
-/*
- * @NOTE: Prepend a `~` to css file paths that are in your node_modules
- *        See https://github.com/webpack-contrib/sass-loader#imports
- */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+:root{
+  --nav-width: 92px;
+  --bg-color: #12192C;
+  --sub-color: #B6CEFC;
+  --white-color: #FFF;
+  --body-font: "Raleway", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+body.sidebar-open {
+  padding-left: 250px; /* Adjust based on the width of your sidebar */
+}
+
+body.sidebar-close {
+  padding-left: 100px; /* Adjust based on the width of your sidebar */
+}
+
+
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+
+}
 body {
   position: relative;
-  color: white;
-  height: 100vh;
-  background: linear-gradient(
-    200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
-  );
-  font-family: sans-serif;
-  overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  background: #F5F5F5;
+  font-family: var(--body-font);
+  font: 16px/26px "Raleway", sans-serif;
+  font-size: var(--normal-font-size);
+  transition: .5s;
+  min-height: 100vh; /* Ensures the height is always at least 100vh */
 }
 
-button {
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  appearance: none;
-  font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-  opacity: 0.9;
+.container {
+  min-height: 100vh; /* Apply this if you have a specific container */
+  display: flex; /* Use flexbox if you need to center the content vertically */
+  flex-direction: column;
+  justify-content: space-between; /* Adjust to center or space elements */
 }
-
-button:hover {
-  transform: scale(1.05);
-  opacity: 1;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  height: fit-content;
-  width: fit-content;
-  margin: 10px;
-}
-
-a:hover {
-  opacity: 1;
-  text-decoration: none;
-}
-
-.Hello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+/* Apply styles to the placeholder text */
+input::placeholder {
+  font-family: 'Roboto', sans-serif; /* Use the custom font */
+  font-size: 13px; /* Adjust the font size */
+  color: #999; /* Adjust the color */
 }

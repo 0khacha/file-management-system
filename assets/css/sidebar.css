@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: white;
+  color: black;
+  transition: width 0.3s; /* Smooth transition */
+  padding: 1.5rem 1.5rem 2rem;
+  z-index: var(--z-fixed);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Add shadow */
+}
+.logo-img
+{
+  height: 80px;
+  width: 80px;
+}
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav__brand{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.nav__toggle{
+  margin-left: 13px;
+  cursor: pointer;
+  color: black;
+  margin-right: 10px;
+}
+.nav__logo{
+  color: black;
+  font-weight: 600;
+}
+
+.nav__link{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: .80rem;
+  padding: .70rem;
+  color: black;
+  border-radius: .5rem;
+  margin-bottom: 1px;
+  transition: .3s;
+  cursor: pointer;
+}
+.nav__link:hover{
+  background-color: #D9D9D9;
+}
+.nav__icon{
+  font-size: 1.25rem;
+  width: 20px;
+  color: black;
+}
+.nav__name{
+  font-size: var(--small-font-size);
+  font-weight: 600;
+
+}
+
+
+.expander{
+  width: calc(var(--nav-width) + 9.25rem);
+
+}
+.l-navbar.expander {
+  width: 250px; /* Expanded width */
+}
+
+.body-pd{
+  padding: 0 0 0 10rem;
+    transition: padding-left 0.3s; /* Smooth transition for body padding */
+
+}
+
+.active{
+  background-color: #D9D9D9;
+}
+
+.collapse{
+  grid-template-columns: 20px max-content 1fr;
+}
+.collapse__link{
+  justify-self: flex-end;
+  transition: .5s;
+}
+.collapse__menu{
+  display: none;
+  padding: .75rem 2.25rem;
+}
+.collapse__sublink{
+  color: black;
+  font-size: var(--small-font-size);
+}
+.collapse__sublink:hover{
+  color: var(--white-color);
+}
+
+.showCollapse{
+  display: block;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}

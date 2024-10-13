@@ -1,0 +1,75 @@
+.storage-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.storage-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 16px;
+  width: 30%;
+  cursor: pointer;
+
+}
+.storage-card:hover{
+  /*background-color: #4285f4;*/
+  /*color: white;*/
+
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.service-icon {
+  /* Remove fixed width and height to show original icon size and color */
+  display: inline-flex; /* Ensure it aligns properly */
+}
+
+.more-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.service-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #202124;
+  margin-bottom: 4px;
+}
+
+.storage-info {
+  font-size: 12px;
+  color: #5f6368;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  height: 4px;
+  background-color: #e8eaed;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+
+.google-drive .progress-fill {
+  background-color: #4285f4;
+}
+
+.dropbox .progress-fill {
+  background-color: #0061ff;
+}
+
+.onedrive .progress-fill {
+  background-color: #0078d4;
+}
