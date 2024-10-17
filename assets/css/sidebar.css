@@ -29,8 +29,8 @@ a{
 }
 .logo-img
 {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 .nav{
   height: 100%;
@@ -89,7 +89,7 @@ a{
 
 }
 .l-navbar.expander {
-  width: 250px; /* Expanded width */
+  width: 200px; /* Expanded width */
 }
 
 .body-pd{

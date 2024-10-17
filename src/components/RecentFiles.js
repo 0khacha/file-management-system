@@ -2,9 +2,10 @@ import React from 'react';
 import '../../assets/css/RecentFiles.css';
 
 const recentFiles = [
-  { name: 'Competitor Analysis Template', members: 'Only you', modified: 'Sep 3, 2019' },
-  { name: 'How to Create a Case Study', members: '3 members', modified: 'Jun 12, 2019' },
-  { name: 'Landing Page Structure', members: '10 members', modified: 'Jul 17, 2019' }
+  { name: 'SE mini project', members: 'Only you', modified: 'Sep 3, 2023' },
+  { name: 'How to Create a Case Study', members: '3 members', modified: 'Jun 12, 2023' },
+  { name: 'Big data & AI', members: '10 members', modified: 'Jul 17, 2023' },
+  { name: 'Landing Page Structure', members: '10 members', modified: 'Jul 19, 2023' }
 ];
 
 const RecentFiles = () => {

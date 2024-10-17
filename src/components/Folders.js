@@ -6,8 +6,9 @@ import {
 
 const folders = [
   { name: 'Analytics', files: '11 files', users: ['👤', '👤'] }, // Example avatars
-  { name: 'Assets', files: '341 files', users: ['👤'] },
+  { name: 'Networks', files: '341 files', users: ['👤'] },
   { name: 'Marketing', files: '112 files', users: ['👤', '👤', '👤'] },
+  { name: 'Big Data', files: '12 files', users: ['👤', '👤', '👤'] },
 ];
 
 const Folders = () => {
@@ -20,16 +21,16 @@ const Folders = () => {
       <div className="folder-list">
         {folders.map((folder, index) => (
           <div className="folder-item" key={index}>
-            <Folder className={"folder-icon"}/>
+            <Folder className={"folder-icon"} background-color="rgba(241, 196, 15, 0.125)" color="#f1c40f" />
             <div className="folder-info">
               <div className="folder-name">{folder.name}</div>
               <div className="folder-files">{folder.files}</div>
             </div>
-            <div className="folder-users">
-              {folder.users.map((user, userIndex) => (
-                <span className="user-avatar" key={userIndex}>{user}</span>
-              ))}
-            </div>
+            {/*<div className="folder-users">*/}
+            {/*  {folder.users.map((user, userIndex) => (*/}
+            {/*    <span className="user-avatar" key={userIndex}>{user}</span>*/}
+            {/*  ))}*/}
+            {/*</div>*/}
           </div>
         ))}
       </div>

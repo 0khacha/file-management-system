@@ -16,7 +16,7 @@
 }
 
 body.sidebar-open {
-  padding-left: 250px; /* Adjust based on the width of your sidebar */
+  padding-left: 200px; /* Adjust based on the width of your sidebar */
 }
 
 body.sidebar-close {

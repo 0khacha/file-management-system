@@ -13,6 +13,7 @@ import {
   LogOut,
   ChevronDown
 } from 'react-feather';
+import {BiSolidDashboard} from "react-icons/bi";
 
 function Sidebar() {
   // Set isNavOpen to false to have the sidebar closed by default
@@ -67,7 +68,12 @@ function Sidebar() {
               <Link to="/" className="nav__logo"><img className="logo-img" src={logo} alt="Logo" /></Link>
             </div>
             <div className="nav__list">
-              <Link to="/" className={`nav__link ${activeLink === "My Files" ? "active" : ""}`}
+              <Link to="/" className={`nav__link ${activeLink === "Dashboard" ? "active" : ""}`}
+                    onClick={() => handleLinkClick("Dashboard")}>
+                <BiSolidDashboard className="nav__icon" />
+                <span className="nav__name">Dashboard</span>
+              </Link>
+              <Link to="/files" className={`nav__link ${activeLink === "My Files" ? "active" : ""}`}
                     onClick={() => handleLinkClick("My Files")}>
                 <FileText className="nav__icon" />
                 <span className="nav__name">My Files</span>

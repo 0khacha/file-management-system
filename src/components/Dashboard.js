@@ -5,6 +5,9 @@ import Folders from './Folders';
 import StorageUsage from './StorageUsage';
 import '../../assets/css/Dashboard.css';
 import RecentFiles from "./RecentFiles";
+import FileCategoryList from "./StorageDetails";
+import StorageDetails from "./StorageDetails";
+import UserProfile from "./UserProfile";
 
 const Dashboard = () => {
   return (
@@ -16,7 +19,9 @@ const Dashboard = () => {
         <RecentFiles/>
       </div>
       <div className="right-section">
-        <StorageUsage />
+        <UserProfile avatarUrl="https://via.placeholder.com/40" username="Dragon Spirit" />
+        <StorageDetails/>
+        {/*<StorageUsage />*/}
       </div>
 
     </div>

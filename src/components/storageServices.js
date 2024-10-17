@@ -4,9 +4,27 @@ import { FaGoogleDrive, FaDropbox, FaCloud } from 'react-icons/fa';
 import '../../assets/css/StorageService.css'
 
 const storageServices = [
-  { name: 'Google Drive', used: 45.5, total: 50, icon: <FaGoogleDrive />, className: 'google-drive' },
-  { name: 'Dropbox', used: 1.2, total: 3, icon: <FaDropbox />, className: 'dropbox' },
-  { name: 'OneDrive', used: 2.5, total: 5, icon: <FaCloud />, className: 'onedrive' },
+  {
+    name: 'Google Drive',
+    used: 45.5,
+    total: 50,
+    icon: <FaGoogleDrive style={{ color: '#0061FF' }} />,
+    className: 'google-drive'
+  },
+  {
+    name: 'Dropbox',
+    used: 1.2,
+    total: 3,
+    icon: <FaDropbox style={{ color: '#0061FF' }} />,
+    className: 'dropbox'
+  },
+  {
+    name: 'OneDrive',
+    used: 2.5,
+    total: 5,
+    icon: <FaCloud style={{ color: '#0078D4' }} />,
+    className: 'onedrive'
+  },
 ];
 
 const StorageService = () => {

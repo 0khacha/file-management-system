@@ -12,20 +12,30 @@
   margin: 16px 0;
 }
 
-.recent-files-table th,
-.recent-files-table td {
+.recent-files-table th{
+  font-weight: 600;
+  font-size: 14px;
+  color: #202124;
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
+}
+.recent-files-table td {
+
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
 }
 
 .recent-files-table th {
   background-color: #f0f0f0;
   font-weight: bold;
+
 }
 
 .recent-files-table tr:hover {
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
 }
 
 .view-all-button {
