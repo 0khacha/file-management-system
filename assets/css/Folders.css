@@ -37,6 +37,7 @@
   align-items: center;
   text-align: center;
   width: 22%;
+  position: relative; /* Allow positioning of child elements */
 }
 
 .folder-item:hover {
@@ -53,7 +54,6 @@
   border-radius: 6px; /* Rounded corners */
   fill: none;
   stroke: rgb(244, 173, 66);
-
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -72,3 +72,16 @@
   font-size: 14px;
   color: #888;
 }
+
+.lock-icon {
+  position: absolute; /* Position the lock icon absolutely */
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+  color: #333; /* Icon color */
+  font-size: 1rem; /* Size of the lock icon */
+}
+.folder-item.locked {
+  background-color: rgba(255, 0, 0, 0.1); /* Light red background for locked folders */
+  border: 1px solid #ff0000; /* Red border for locked folders */
+}
+

@@ -3,15 +3,24 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
-import Dashboard from '../components/Dashboard';
+import Dashboard from '../components/dashboard/Dashboard';
 
 import './App.css';
+import FoldersPage from "../components/folder/FoldersPage";
+import FilesPage from "../components/files/FilesPage";
+import SearchBar from "../components/SearchBar";
+import UserProfile from "../components/UserProfile";
+import user from '../../assets/icons/OIG1.jpg';
 
 const App = () => {
   return (
     <div className="app-container">
       {/* Sidebar and Routes should not be wrapped in another Router */}
       <Sidebar />
+      <div className={'searchBar-And-Profil'}>
+          <SearchBar/>
+          <UserProfile avatarUrl={user} username={"Mohamed khacha"}/>
+      </div>
       <AppRoutes />
     </div>
   );
@@ -21,6 +30,8 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />} />
+      <Route path="/files" element={<FilesPage />} />
+      <Route path="/folders" element={<FoldersPage />} />
     </Routes>
   );
 };

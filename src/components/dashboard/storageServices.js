@@ -1,7 +1,7 @@
 import React from 'react';
 import { MoreVertical } from 'lucide-react';
 import { FaGoogleDrive, FaDropbox, FaCloud } from 'react-icons/fa';
-import '../../assets/css/StorageService.css'
+import '../../../assets/css/StorageService.css'
 
 const storageServices = [
   {

@@ -1,0 +1,106 @@
+/* Main folders page layout */
+.folders-page {
+  padding: 20px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.breadcrumbs {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-options {
+  padding: 5px;
+  font-size: 0.9rem;
+  border:none;
+  width: 200px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced hover effect */
+}
+
+.grid-view-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.folders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+.folders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.folders-header h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.control-btn, .grid-view-btn {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.items-count {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Folder grid layout */
+.folders-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+/* Style for the date header */
+.date-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style for the separator (horizontal line) */
+.date-separator {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Style for the file list */
+.file-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between file cards */
+}
+
+/* Optional: Adjust FileCard styling if needed */
+.folder-item {
+  width: 22%; /* Ensure that the file cards are well-spaced */
+}

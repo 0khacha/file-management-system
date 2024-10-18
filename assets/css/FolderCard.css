@@ -1,0 +1,72 @@
+.folder-card {
+  background-color: #FFFFFF; /* Soft background similar to the image */
+  margin-top: 20px;
+  border: 1px solid #E0E0E0; /* Light border for a soft card effect */
+  border-radius: 6px; /* Slightly reduced border-radius for a sleek look */
+  padding: 6px; /* Adjusted padding for compact design */
+  text-align: left; /* Align text to the left for better UX */
+  width: 200px; /* Adjusted width for a broader card */
+  position: relative;
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  cursor: pointer;
+}
+
+.folder-card:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced hover effect */
+}
+
+.folder-icon-page {
+  background-color: #f9f9f9; /* Light background for icon section */
+  height: 5rem; /* Same size but fits better with spacing */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the icon vertically and horizontally */
+
+}
+
+.folder-icon-page img {
+  width: 60px;
+  height: 60px; /* Set consistent size for folder icon */
+  color: #f4ad42; /* Golden color for the folder icon */
+}
+
+.folder-details h3 {
+  font-size: 0.8rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.folder-details p {
+  font-size: 0.9rem; /* Slightly increased for better readability */
+  color: #666;
+}
+
+
+.locked {
+  background-color: rgba(255, 0, 0, 0.1); /* Light red background for locked folders */
+  border: 1px solid #ff0000; /* Red border for locked folders */
+  opacity: 0.5; /* Make locked folders more faded */
+}
+
+
+.lock-icon {
+  position: absolute;
+  color: #333333; /* Red color for lock icon */
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+
+.folder-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px; /* Create space between icon and details */
+}
+
+.file-count {
+  font-size: 0.8rem;
+  color: #888; /* Subtle text color for file count */
+  margin-left: 10px;
+}

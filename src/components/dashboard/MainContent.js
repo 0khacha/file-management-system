@@ -1,7 +1,7 @@
 // src/components/MainContent.js
 
 import React from 'react';
-import '../../assets/css/maincontent.css';
+import '../../../assets/css/maincontent.css';
 
 const MainContent = () => {
   return (

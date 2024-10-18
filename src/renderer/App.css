@@ -33,7 +33,7 @@ body.sidebar-close {
 body {
   position: relative;
   margin: auto;
-  background: #F5F5F5;
+  background-color: #f8fafc;
   font-family: var(--body-font);
   font: 16px/26px "Raleway", sans-serif;
   font-size: var(--normal-font-size);
@@ -46,10 +46,4 @@ body {
   display: flex; /* Use flexbox if you need to center the content vertically */
   flex-direction: column;
   justify-content: space-between; /* Adjust to center or space elements */
-}
-/* Apply styles to the placeholder text */
-input::placeholder {
-  font-family: 'Roboto', sans-serif; /* Use the custom font */
-  font-size: 13px; /* Adjust the font size */
-  color: #999; /* Adjust the color */
 }

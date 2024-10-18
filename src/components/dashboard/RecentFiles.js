@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/css/RecentFiles.css';
+import '../../../assets/css/RecentFiles.css';
 
 const recentFiles = [
   { name: 'SE mini project', members: 'Only you', modified: 'Sep 3, 2023' },

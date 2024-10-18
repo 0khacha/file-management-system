@@ -1,7 +1,7 @@
 import React from 'react';
 import { FileText, Image, Folder, HelpCircle } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
-import '../../assets/css/StorageDetails.css';
+import '../../../assets/css/StorageDetails.css';
 
 const StorageDetails = () => {
   const totalStorage = 128; // Total storage in GB

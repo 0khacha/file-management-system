@@ -1,30 +1,32 @@
+
 .user-profile {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
-}
-
-.search-box {
-  background-color: #f0f0f0;
-  border-radius: 50%;
-  padding: 10px;
-
+  margin-bottom: 0; /* Remove the bottom margin */
 }
 
 .user-info {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .user-avatar {
-  width: 40px;
-  height: 40px;
+  width: 32px; /* Slightly smaller avatar */
+  height: 32px;
   border-radius: 50%;
   margin-right: 10px;
 }
+.bell
+{
+  margin-top: 5px;
+  width: 23px; /* Slightly smaller avatar */
+  height: 23px;
+  margin-right: 20px;
+}
 
 .user-name {
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 5px;
+  font-size: 14px; /* Added font size */
 }
