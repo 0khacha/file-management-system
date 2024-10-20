@@ -1,34 +1,33 @@
 .folder-card {
-  background-color: #FFFFFF; /* Soft background similar to the image */
+  background-color: #FFFFFF;
   margin-top: 20px;
-  border: 1px solid #E0E0E0; /* Light border for a soft card effect */
-  border-radius: 6px; /* Slightly reduced border-radius for a sleek look */
-  padding: 6px; /* Adjusted padding for compact design */
-  text-align: left; /* Align text to the left for better UX */
-  width: 200px; /* Adjusted width for a broader card */
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  padding: 6px;
+  text-align: left;
+  width: 200px;
   position: relative;
-  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .folder-card:hover {
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced hover effect */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .folder-icon-page {
-  background-color: #f9f9f9; /* Light background for icon section */
-  height: 5rem; /* Same size but fits better with spacing */
+  background-color: #f9f9f9;
+  height: 5rem;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the icon vertically and horizontally */
-
+  align-items: center;
 }
 
 .folder-icon-page img {
-  width: 60px;
-  height: 60px; /* Set consistent size for folder icon */
-  color: #f4ad42; /* Golden color for the folder icon */
+  width: 80px;
+  height: 80px;
+  color: #f4ad42;
 }
 
 .folder-details h3 {
@@ -38,21 +37,19 @@
 }
 
 .folder-details p {
-  font-size: 0.9rem; /* Slightly increased for better readability */
+  font-size: 0.9rem;
   color: #666;
 }
 
-
 .locked {
-  background-color: rgba(255, 0, 0, 0.1); /* Light red background for locked folders */
-  border: 1px solid #ff0000; /* Red border for locked folders */
-  opacity: 0.5; /* Make locked folders more faded */
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff0000;
+  opacity: 0.5;
 }
-
 
 .lock-icon {
   position: absolute;
-  color: #333333; /* Red color for lock icon */
+  color: #333333;
   top: 10px;
   right: 10px;
   font-size: 1.2rem;
@@ -62,11 +59,57 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2px; /* Create space between icon and details */
+  margin-top: 2px;
 }
 
 .file-count {
   font-size: 0.8rem;
-  color: #888; /* Subtle text color for file count */
+  color: #888;
   margin-left: 10px;
+}
+
+/* Styles for the three-dot menu */
+.folder-menu {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #888; /* Subtle color for the three dots */
+}
+
+.menu-btn:hover {
+  color: #333; /* Darken the color on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 150px;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+  color: #333;
 }

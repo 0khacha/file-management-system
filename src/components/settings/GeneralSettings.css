@@ -1,0 +1,220 @@
+.setting-page-profile {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px; /* Slightly increased gap for better spacing */
+}
+
+.profile-details-section {
+  background-color: #FFFFFF; /* Softer background for a modern look */
+  border-radius: 24px 60px;
+  border: black solid 1px;
+  padding: 30px;
+  width: 50%;
+  height: 70%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Subtle box-shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.profile-details-section:hover {
+  background-color: #eaeaea; /* Slight hover effect for interactivity */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.photo-section .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.photo-section .image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-section .image img:hover {
+  transform: scale(1.05); /* Gentle zoom-in on hover */
+}
+
+.photo-section input[type="file"] {
+  display: none;
+}
+
+.user-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for better readability */
+  width: 100%;
+}
+
+.user-email label {
+  font-weight: bold;
+  color: #333; /* Darker text for better contrast */
+}
+
+.user-email input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.user-email input:focus {
+  border-color: #007bff; /* Add a blue highlight on focus */
+  outline: none; /* Remove default outline */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.password-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  border: black solid 1px;
+}
+
+.password-section:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+  background-color: #eaeaea; /* Slight hover effect for interactivity */
+}
+
+.password-section h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.edit-password .password-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* More space between inputs */
+}
+
+.edit-password .password-inputs input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.edit-password .password-inputs input:focus {
+  border-color: #007bff;
+}
+
+.password-section button,.user-email-class button{
+  background: linear-gradient(to right, #a7eca7, #045504);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.password-section button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-second-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* More gap for better layout */
+  width: 40%;
+  height: 70%;
+  margin-right: 40px;
+}
+
+.delete-account-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  border: black solid 1px;
+}
+
+.delete-account-section:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  background-color: #eaeaea; /* Slight hover effect for interactivity */
+}
+
+.delete-account-section h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.delete-account-section p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #666; /* Softer color for less emphasis */
+}
+
+.delete-account-section button {
+  background-color: #dc3545;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.delete-account-section button:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.user-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns for "Nom" and "Prénom" */
+  gap: 20px; /* Gap between columns */
+  width: 100%;
+}
+
+.user-email .full-width {
+  grid-column: span 2; /* Make "Email" and "Phone" span across both columns */
+}
+
+.user-email label {
+  font-weight: bold;
+  color: #333; /* Darker text for better contrast */
+}
+
+.user-email input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.user-email input:focus {
+  border-color: #007bff; /* Add a blue highlight on focus */
+  outline: none; /* Remove default outline */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

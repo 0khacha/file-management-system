@@ -34,6 +34,7 @@ body {
   position: relative;
   margin: auto;
   background-color: #f8fafc;
+  /*background: linear-gradient(to bottom, #FFFFFF, rgba(188, 173, 173, 0.51));*/
   font-family: var(--body-font);
   font: 16px/26px "Raleway", sans-serif;
   font-size: var(--normal-font-size);

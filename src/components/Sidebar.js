@@ -13,7 +13,10 @@ import {
   LogOut,
   ChevronDown
 } from 'react-feather';
-import {BiSolidDashboard} from "react-icons/bi";
+import {BiAnalyse, BiSolidAnalyse, BiSolidDashboard} from "react-icons/bi";
+import {DatabaseIcon} from "lucide-react";
+import {GoGraph} from "react-icons/go";
+import {PiGraph} from "react-icons/pi";
 
 function Sidebar() {
   // Set isNavOpen to false to have the sidebar closed by default
@@ -98,9 +101,14 @@ function Sidebar() {
                 <Trash2 className="nav__icon" />
                 <span className="nav__name">Trash</span>
               </Link>
-              <div className="nav__link collapse">
+              <Link to="/settings" className={`nav__link ${activeLink === "settings" ? "active" : ""}`}
+                    onClick={() => handleLinkClick("settings")}>
                 <Settings className="nav__icon" />
                 <span className="nav__name">Settings</span>
+              </Link>
+              <div className="nav__link collapse">
+                <PiGraph className="nav__icon" />
+                <span className="nav__name">Analyse</span>
                 <ChevronDown className="collapse__link" onClick={toggleCollapse} />
                 <ul className="collapse__menu">
                   <li><a href="#" className="collapse__sublink">Profile</a></li>

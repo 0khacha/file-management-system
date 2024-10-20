@@ -4,31 +4,33 @@ import '../../../assets/css/FoldersPage.css';
 import folderData from "./FolderData";
 
 const FoldersPage = () => {
-  // Set up folders and current sorting in the state
-  const [folders, setFolders] = useState(folderData)
+  const [folders, setFolders] = useState(folderData);
+  const [sortOption, setSortOption] = useState("Most Recent"); // Default sorting option
+  const [currentFolder, setCurrentFolder] = useState("Folders");
 
-  const [sortOption, setSortOption] = useState("Date Added"); // Sort option state
-  const [currentFolder, setCurrentFolder] = useState("Folders"); // Current folder state
+  // Group folders by dateAdded
+  const groupedFolders = folders.reduce((acc, folder) => {
+    const date = folder.dateAdded; // Group by the date the folder was added
+    if (!acc[date]) acc[date] = [];
+    acc[date].push(folder);
+    return acc;
+  }, {});
 
-  // Function to handle sorting and update the folder list accordingly
-  const handleSortChange = (e) => {
-    const option = e.target.value;
-    setSortOption(option);
-
-    let sortedFolders = [...folders]; // Create a new array copy
-
-    if (option === "Alphabet") {
-      sortedFolders.sort((a, b) => a.name.localeCompare(b.name));
-    } else if (option === "Size") {
-      sortedFolders.sort((a, b) => b.size - a.size);
-    } else if (option === "Date Added") {
-      sortedFolders.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+  // Sort the dates based on the selected sort option
+  const sortedDates = Object.keys(groupedFolders).sort((a, b) => {
+    if (sortOption === "Most Recent") {
+      return new Date(b) - new Date(a); // Sort by most recent
+    } else {
+      return new Date(a) - new Date(b); // Sort by oldest
     }
+  });
 
-    setFolders(sortedFolders); // Set the new sorted folders
+  // Function to handle the sorting change
+  const handleSortChange = (e) => {
+    setSortOption(e.target.value);
   };
 
-  // Function to change folder navigation
+  // Function to handle folder click navigation
   const handleFolderClick = (folderName) => {
     setCurrentFolder(`Folders / ${folderName}`);
   };
@@ -40,29 +42,35 @@ const FoldersPage = () => {
         <span>{currentFolder}</span>
       </div>
 
-      {/* Control panel for sorting and display options */}
+      {/* Control panel for sorting */}
       <div className="controls">
         <select className="sort-options" value={sortOption} onChange={handleSortChange}>
-          <option value="Date Added">Date Added</option>
-          <option value="Alphabet">Alphabet</option>
-          <option value="Size">Size</option>
+          <option value="Most Recent">Most Recent</option>
+          <option value="Oldest">Oldest</option>
         </select>
-
 
         <button className="grid-view-btn">&#x2630;</button>
       </div>
 
-      {/* Folder grid to display folder cards */}
-      <div className="folders-grid">
-        {folders.map((folder, index) => (
-          <FolderCard
-            key={index}
-            name={folder.name}
-            icon={folder.icon} // Reusing the Feather icon component
-            filesCount={folder.filesCount}
-            locked={folder.locked}
-            onClick={() => handleFolderClick(folder.name)} // Handle click to navigate into folder
-          />
+      {/* Display folders grouped by date */}
+      <div className="folders-section">
+        {sortedDates.map((date) => (
+          <div key={date} className="folder-group">
+            <h3 className="date-header">{date}</h3> {/* Date header */}
+            <hr className="date-separator" /> {/* Horizontal separator */}
+            <div className="folders-grid">
+              {groupedFolders[date].map((folder, index) => (
+                <FolderCard
+                  key={index}
+                  name={folder.name}
+                  icon={folder.icon} // Reusing the Feather icon component
+                  filesCount={folder.filesCount}
+                  locked={folder.locked}
+                  onClick={() => handleFolderClick(folder.name)} // Handle click to navigate into folder
+                />
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </div>

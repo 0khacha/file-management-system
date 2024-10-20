@@ -101,11 +101,14 @@
     }
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.1",
     "@electron/notarize": "^2.3.2",
+    "antd": "^5.21.4",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
     "electron-updater": "^6.1.4",
     "lucide-react": "^0.452.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",

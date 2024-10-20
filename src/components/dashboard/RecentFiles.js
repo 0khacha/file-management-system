@@ -1,19 +1,24 @@
 import React from 'react';
 import '../../../assets/css/RecentFiles.css';
-
-const recentFiles = [
-  { name: 'SE mini project', members: 'Only you', modified: 'Sep 3, 2023' },
-  { name: 'How to Create a Case Study', members: '3 members', modified: 'Jun 12, 2023' },
-  { name: 'Big data & AI', members: '10 members', modified: 'Jul 17, 2023' },
-  { name: 'Landing Page Structure', members: '10 members', modified: 'Jul 19, 2023' }
-];
+import fileData from './../../components/files/FileData'; // Adjust the import path as needed
+import {Link} from 'react-router-dom';
 
 const RecentFiles = () => {
+  // Sort by dateAdded and take the recent 4
+  const recentFiles = fileData
+    .sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded)) // Sort in descending order
+    .slice(0, 4) // Take the top 4 recent files
+    .map(file => ({
+      name: file.name.split('.').slice(0, -1).join('.'), // Remove extension
+      members: file.members, // Assuming addedBy as members for simplicity
+      modified: file.dateAdded // Assuming dateAdded as last modified
+    }));
+
   return (
     <div className="recent-files-container">
       <div className="folder-header">
         <span>Recent files</span>
-        <a href="#">View all</a>
+        <Link to={"/files"} >View all</Link>
       </div>
       <table className="recent-files-table">
         <thead>

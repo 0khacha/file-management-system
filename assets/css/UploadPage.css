@@ -1,0 +1,88 @@
+.upload-page {
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.storage-container {
+  margin-bottom: 20px;
+}
+
+.storage-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.progress-bar-container {
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 15px;
+}
+
+
+
+.storage-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.upload-area {
+  border: 2px dashed #108ee9;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload-area:hover {
+  background: #f0f8ff;
+}
+
+.upload-icon {
+  margin-bottom: 10px;
+}
+
+.upload-text {
+  font-size: 16px;
+  color: #555;
+}
+
+.uploaded-files {
+  margin-top: 20px;
+}
+
+.uploaded-files table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.uploaded-files th, .uploaded-files td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.uploaded-files th {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.remove-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #ff7875;
+}

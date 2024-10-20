@@ -11,6 +11,9 @@ import FilesPage from "../components/files/FilesPage";
 import SearchBar from "../components/SearchBar";
 import UserProfile from "../components/UserProfile";
 import user from '../../assets/icons/OIG1.jpg';
+import UploadPage from "../components/upload/UploadPage";
+import settings from "../components/settings/GeneralSettings"
+import GeneralSettings from "../components/settings/GeneralSettings";
 
 const App = () => {
   return (
@@ -32,6 +35,8 @@ const AppRoutes = () => {
       <Route path="/" element={<Dashboard />} />
       <Route path="/files" element={<FilesPage />} />
       <Route path="/folders" element={<FoldersPage />} />
+      <Route path="/upload" element={<UploadPage />} />
+      <Route path="/settings" element={<GeneralSettings />} />
     </Routes>
   );
 };
