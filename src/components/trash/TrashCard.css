@@ -1,0 +1,124 @@
+/* TrashCard.css */
+
+.trash-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 229, 229, 0.83); /* Light background for the card */
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.trash-card:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Icon (Folder/File) */
+.trash-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  background-color: transparent;
+}
+
+.trash-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.locked .trash-icon {
+  background-color: #f2dede; /* Red background if locked */
+}
+
+/* Details Section */
+.trash-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.trash-details h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.trash-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Lock Icon */
+.lock-icon {
+  color: #e74c3c;
+  margin-left: 8px;
+}
+
+/* Three Dots Menu */
+.trash-menu {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.menu-btn:hover {
+  color: #333; /* Darker color on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  z-index: 10;
+  padding: 8px 0;
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #333;
+  list-style: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .trash-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trash-icon {
+    margin-bottom: 8px;
+  }
+
+  .trash-details {
+    margin-bottom: 8px;
+  }
+}

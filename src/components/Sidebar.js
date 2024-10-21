@@ -91,11 +91,6 @@ function Sidebar() {
                 <Upload className="nav__icon" />
                 <span className="nav__name">Upload</span>
               </Link>
-              <Link to="/download" className={`nav__link ${activeLink === "Download" ? "active" : ""}`}
-                    onClick={() => handleLinkClick("Download")}>
-                <Download className="nav__icon" />
-                <span className="nav__name">Download</span>
-              </Link>
               <Link to="/trash" className={`nav__link ${activeLink === "Trash" ? "active" : ""}`}
                     onClick={() => handleLinkClick("Trash")}>
                 <Trash2 className="nav__icon" />

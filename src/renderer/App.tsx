@@ -14,6 +14,8 @@ import user from '../../assets/icons/OIG1.jpg';
 import UploadPage from "../components/upload/UploadPage";
 import settings from "../components/settings/GeneralSettings"
 import GeneralSettings from "../components/settings/GeneralSettings";
+import TrashPage from "../components/trash/TrashPage";
+import AuthPage from "../components/AuthPage/AuthPage";
 
 const App = () => {
   return (
@@ -37,6 +39,8 @@ const AppRoutes = () => {
       <Route path="/folders" element={<FoldersPage />} />
       <Route path="/upload" element={<UploadPage />} />
       <Route path="/settings" element={<GeneralSettings />} />
+      <Route path="/trash" element={<TrashPage />} />
+      <Route path="/logout" element={<AuthPage />} />
     </Routes>
   );
 };

@@ -1,0 +1,53 @@
+.trash-page {
+  padding: 20px;
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sort-options {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.grid-view-btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.trash-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trash-group {
+  margin-bottom: 20px;
+}
+
+.date-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.date-separator {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin-bottom: 10px;
+}
+
+.trash-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}

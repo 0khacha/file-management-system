@@ -25,10 +25,10 @@ const GeneralSettings = () => {
   useEffect(() => {
     // Mock user data setup (replace this with actual data from a hook or global state)
     const user = {
-      first_name: 'John',
-      last_name: 'Doe',
-      email: 'john.doe@example.com',
-      phone_number: '1234567890',
+      first_name: 'Med',
+      last_name: 'Khacha',
+      email: 'Med.khacha@gmail.com',
+      phone_number: '0653206661',
       image: '',
     };
     setFormData({
