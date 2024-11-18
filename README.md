@@ -1,4 +1,4 @@
-![Background](./assets/background.png)
+![Background](./assets/dashboard.PNG)
 <img src=".erb/img/erb-banner.svg" width="100%" />
 
 <br>
